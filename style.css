@@ -1,0 +1,352 @@
+:root {
+    --main-color: #2E8DDB;
+    --dark-blue: #133B5C;
+    --grey-blue: #2F485C;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a:visited {
+    color: black
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: flex;
+}
+
+
+@media (max-width: 575px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 40px repeat(30, auto);
+    }
+
+    menu {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        background-color: var(--dark-blue);
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        box-shadow: rgb(0, 0, 0) 0px 1px 4px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        background-color: rgb(0, 27, 48);
+        width: 50%;
+        height: 100%;
+        transition: opacity .8s ease-in-out;
+    }
+
+    .nav-menu ul {
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+    
+    .nav-menu ul li {
+        margin: 10px 0 10px 0;
+        border-bottom: 1px solid white;
+        width: 50%;
+    }
+
+    .nav-menu ul a {
+        color: white;
+        font-weight: 300;
+        font-size: 5vw;
+        padding: 2px 0 2px 0;
+    }
+
+    #toggle-menu img{
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    #logo_branca {
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    /* Row marker: 2 - 6 */
+    header {
+        grid-column: 1 / 4;
+        grid-row: 2 / 6;
+        background-image: url(/imagens/foto2_casa.jpeg);
+        background-position-y: center;
+        background-color: rgb(146, 146, 146);
+        background-blend-mode: multiply;
+        background-size: 125%;
+        box-shadow: rgb(172, 172, 172) 0 1px 5px;
+    }
+
+    header h1 {
+        color: white;
+        font-size: 5vw;
+        text-align: center;
+        padding-bottom: 30px;
+        cursor: default;
+        margin: 0 3vw 0 3vw;
+    }
+    
+    header img {
+        width: 60%;
+        margin: 0 15% 0 20%;
+    }
+    
+
+    .blank {
+        height: 6000px;
+    }
+
+    /* Row marker: 6 - 10 */
+    .services {
+        grid-column: 2 / 3;
+        grid-row: 6 / 10;
+        margin-top: 10vw;
+    }
+
+    .services h1 {
+        text-align: center;
+        font-size: 10vw;
+        margin: 10px 0 10px 0;
+        color: var(--dark-blue);
+        cursor: default;
+    }
+
+    .services p {
+        color: rgb(128, 128, 128);
+    }
+
+    .service-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vw;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70vw;
+        border: 1px solid rgb(218, 218, 218);
+        box-shadow: rgb(203, 223, 238) -2px 1px 5px;
+        cursor: default;
+    }
+
+    .service-box img {
+        width: 15%;
+        margin-top: 3vw;
+        transition: width .3s;
+    }
+
+    .service-box img:hover {
+        z-index: 10;
+        width: 20%;
+    }
+
+    .service-box h2 {
+        color: var(--main-color);
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+
+    .service-box p {
+        text-align: center;
+        font-size: 3vw;
+        margin: 2vw 2vw 0 2vw;
+        color: rgb(94, 94, 94);
+    }
+
+    .service-box a {
+        background-color: var(--grey-blue);
+        color: white;
+        margin-top: 2.5vw;
+        padding: 2.5vw;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 3vw;
+        border-radius: 20px;
+    }
+
+    .services h3 {
+        text-align: center;
+        font-size: 4vw;
+        margin-top: 2.5vw;
+        color: var(--dark-blue);
+    }
+
+    .services p {
+        font-size: 2.7vw;
+        text-align: center;
+    }
+    
+    /* Row marker 10 / 11 */
+    section.know-more {
+        grid-column: 1 / 4;
+        grid-row: 10 / 11;
+        background-color: var(--main-color);
+        display: flex;
+        align-items: center;
+        height: 300px;
+        font-size: 3vw;
+        margin-top: 10vw;
+    }
+
+    .know-more div {
+        margin: 0 5% 0 5%;
+        width: 45%;
+        color: white;
+    }
+
+    .know-more p {
+        font-size: 2.66vw;
+    }
+
+    /* Row marker 11 / 13 */
+    .gallery {
+        grid-column: 1 / 4;
+        grid-row: 11 / 13;
+        display: flex;
+        margin: 0 0 5vw 0;
+    }
+
+    .gallery div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery div img {
+        width: 100%;
+        height: 35vw;
+    }
+
+    /* Row marker 13 / 14 */
+    section.technical-info {
+        grid-column: 2 / 3;
+        grid-row: 13 / 14;
+        text-align: center;
+        margin: 5vw 0 5vw 0;
+    }
+
+    .technical-info h3 {
+        color: var(--dark-blue);
+    }
+
+    .technical-info p {
+        font-size: 2.7vw;
+        color: rgb(128, 128, 128);
+    }
+
+    /* Row marker 15 / 16 */
+    contact {
+        grid-column: 2 / 3;
+        grid-row: 15 / 16;
+        color: var(--dark-blue);
+        margin: 5vw 0 5vw 0;
+        text-align: center;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vw;
+    }
+
+    .contact-box h3 {
+        border-bottom: 1px solid var(--dark-blue);
+        margin-top: 3vw;
+        font-size: 5vw;
+        padding-bottom: 3vw;
+    }
+
+    .contact-box p {
+        margin: 2vw 0 2vw 0;
+    }
+
+    .display-icon {
+        background-color: var(--main-color);
+        width: 20%;
+        border-radius: 100%;
+        padding: 4vw 0 4vw 0;
+        transition: background-color .4s ease-in-out;
+    }
+
+    .display-icon:hover {
+        background-color: var(--dark-blue);
+    }
+
+    .display-icon img {
+        width: 45%;
+    }
+
+     /* Row marker 16 / 17 */
+    div.formulario {
+        grid-column: 2 / 3;
+        grid-row: 16 / 17;
+        margin: 5vw 0 5vw 0;
+    }
+
+    .formulario form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 3vw 0 3vw 0 ;
+        background-color: rgb(228, 245, 255);
+        box-shadow: #b1c1ce 2px 2px 6px;
+    }
+    
+    .formulario label {
+        color: var(--dark-blue);
+        margin: 2vw 0 2vw 5vw;
+    }
+
+    .formulario input {
+        width: 86%;
+        margin: 0 0 0 5vw;
+        height: 5vw;
+        padding-left: 2vw;
+    }
+
+    .formulario input:focus {
+        outline: none;
+    }
+
+    .formulario button {
+        width: 20vw;
+        height: 10vw;
+        border-radius: 12vw;
+        border: none;
+        background-color: var(--main-color);
+        color: white;
+        align-self: center;
+        margin: 5vw 0 5vw 0;
+    }
+
+    footer {
+        grid-column: 1 / 4;
+        grid-row: 17 / 18;
+        height: 200px;
+        background-color: #2E8DDB;
+        margin: 5vw 0 0 0;
+        float: left;
+    }
+
+    footer p {
+        margin: 5vw 0 0 5%;
+        color: white;
+    }
+} 
