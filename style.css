@@ -26,12 +26,12 @@ a:visited {
 }
 
 
-@media (max-width: 575px) {
+@media (max-width: 645px) {
 
     body {
         display: grid;
         grid-template-columns: 5% 90% 5%;
-        grid-template-rows: 40px repeat(30, auto);
+        grid-template-rows: 40px repeat(18, auto);
     }
 
     menu {
@@ -44,6 +44,20 @@ a:visited {
         align-items: center;
         z-index: 10;
         box-shadow: rgb(0, 0, 0) 0px 1px 4px;
+    }
+
+    #toggle-menu img{
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    #logo_branca {
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .desktop-menu {
+        display: none;
     }
 
     .nav-menu {
@@ -72,15 +86,6 @@ a:visited {
         padding: 2px 0 2px 0;
     }
 
-    #toggle-menu img{
-        height: 30px;
-        margin-left: 10px;
-    }
-
-    #logo_branca {
-        height: 35px;
-        margin-right: 10px;
-    }
 
     /* Row marker: 2 - 6 */
     header {
@@ -90,7 +95,7 @@ a:visited {
         background-position-y: center;
         background-color: rgb(146, 146, 146);
         background-blend-mode: multiply;
-        background-size: 125%;
+        background-size: 150%;
         box-shadow: rgb(172, 172, 172) 0 1px 5px;
     }
 
@@ -169,14 +174,22 @@ a:visited {
         color: rgb(94, 94, 94);
     }
 
-    .service-box a {
+    .services-container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1vw;
+    }
+
+
+    .services-container-2 a {
         background-color: var(--grey-blue);
         color: white;
-        margin-top: 2.5vw;
-        padding: 2.5vw;
+        margin: 5vw 0 3vw 0;
+        padding: 3vw;
         cursor: pointer;
         font-weight: 600;
-        font-size: 3vw;
+        font-size: 2vw;
         border-radius: 20px;
     }
 
@@ -202,6 +215,7 @@ a:visited {
         height: 300px;
         font-size: 3vw;
         margin-top: 10vw;
+        padding: 5vw 0 5vw 0
     }
 
     .know-more div {
@@ -305,7 +319,7 @@ a:visited {
         justify-content: center;
         align-items: flex-start;
         padding: 3vw 0 3vw 0 ;
-        background-color: rgb(228, 245, 255);
+        background-color: #f7fbff;
         box-shadow: #b1c1ce 2px 2px 6px;
     }
     
@@ -350,3 +364,334 @@ a:visited {
         color: white;
     }
 } 
+
+@media (min-width: 645px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(12, 8.33%);
+        grid-template-rows: repeat(10, auto);
+    }
+
+    menu {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: var(--dark-blue);
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        box-shadow: rgb(0, 0, 0) 0px 1px 4px;
+    }
+
+    menu img {
+        width: 10vh;
+        margin-left: 3%;
+    }
+
+    #toggle-menu{
+        display: none;
+    }
+
+    ul.desktop-menu {
+        display: flex;
+        margin-right: 3%;
+    }
+
+    .desktop-menu li {
+        margin-left: 2vw;
+        font-weight: 500;
+    }
+
+    .desktop-menu a {
+        color: white;
+        padding-bottom: 28px;
+    }
+
+    .desktop-menu a:hover {
+        color: var(--main-color);
+        border-bottom: 5px solid white;
+    }
+
+    /* Row marker: 1 / 2 */
+    header {
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+        height: 47vw;
+        background-image: url(/imagens/foto2_casa.jpeg);
+        background-color: rgb(146, 146, 146);
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: 120%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 50px;
+    }
+
+    header h1 {
+        font-size: 3vw;
+    }
+
+    header img {
+        width: 30vw;
+    }
+
+    /* Row marker: 2 / 3 */
+    section.services {
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+        text-align: center;
+        margin-top: 5vw;
+        color: var(--dark-blue);
+    }
+
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1vw;
+    }
+    
+    .services p {
+        color: rgb(128, 128, 128);
+        font-size: 1.3vw;
+        margin: 20px;
+        z-index: -1;
+    }
+    .services h1 {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    .services h3 {
+        font-weight: 400;
+    }
+
+    .service-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vw;
+        width: 32%;
+        height: 30vw;
+        border: 1px solid rgb(243, 240, 240);
+        box-shadow: rgb(233, 241, 247) 2px 1px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .service-box h2 {
+        color: var(--main-color);
+        font-size: 1.4vw;
+        margin-top: 2vw;
+    }
+
+    .service-box img {
+        width: 4vw;
+        margin-top: 2vw;
+        z-index: 10;
+        transition: width .3s;
+    }
+
+    .service-box img:hover {
+        width: 4.8vw;
+    }
+
+    .services-container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1vw;
+    }
+
+    .services-container-2 a {
+        background-color: var(--main-color);
+        color: white;
+        margin: 5vw 0 3vw 0;
+        padding: 1.3vw;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.1vw;
+        border-radius: 20px;
+        border: 1px solid var(--main-color);
+        transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .services-container-2 a:hover {
+        background-color: white;
+        color: var(--main-color);
+        
+    }
+
+    section.know-more {
+        grid-column: 1 / 13;
+        grid-row: 3 / 4;
+        display: flex;
+        background-color: var(--main-color);
+        margin: 10vw 0 0 0;
+        height: 600px;
+        background-image: url(/imagens/foto7_casa_int.jpeg);
+        background-position: 30%;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+    }
+
+    .know-more div {
+        width: 50%;
+        margin: 5%;
+        color: white;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-column: 1 / 13;
+        grid-row: 4 / 5;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gallery div{
+        width: 100%;
+        display: flex;
+    }
+
+    .gallery div img {
+        width: 33.3%;
+        height: 20vw;
+    }
+
+    .technical-info {
+        grid-column: 2 / 12;
+        grid-row: 5 / 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5vw 0 5vw 0;
+    }
+
+    .technical-info h3 {
+        font-size: 1.5rem;
+        color: var(--dark-blue);
+        font-weight: 300;
+    }
+
+    .technical-info p {
+        color: gray;
+    }
+
+    contact {
+       grid-column: 2 / 12;
+       grid-row: 6 / 7;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       color: var(--dark-blue);
+    }
+    
+    contact > h1 {
+        font-weight: 300;
+    }
+
+    .flex-container-h {
+        display: flex;
+        width: 100%;
+        margin: 5vw 0 5vw 0;
+        justify-content: space-between;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 30vw;
+        text-align: center;
+        font-size:  1.2vw;
+    }
+    
+    .display-icon {
+        background-color: var(--main-color);
+        width: 20vw;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 3vw 0;
+        transition: background-color 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+    
+    .display-icon:hover {
+        background-color: var(--dark-blue);
+    }
+
+    .display-icon img {
+        width: 50%;
+        padding: 5vw 0 5vw 0
+    }
+
+
+    div.formulario {
+        grid-column: 2 / 12;
+        grid-row: 7 / 8;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .formulario form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75vw;
+        background-color: #f7fbff;
+        height: 28vw;
+        box-shadow: rgb(233, 241, 247) 2px 1px 5px;
+        margin: 5vw 0 5vw 0;
+    }
+
+    .formulario form > label {
+        font-size: 1.5vw;
+        color: var(--dark-blue);
+        margin: 1vw 
+    }
+
+    .formulario form input {
+        width: 94%;
+        height: 70px;
+        margin: 0 0 0 1vw;
+        padding: 1vw;
+    }
+    
+    .formulario form input:focus {
+        outline: none;
+    }
+
+    .formulario button {
+        align-self: center;
+        margin: 2vw;
+        padding: 1vw 2vw 1vw 2vw;
+        border: none;
+        color: white;
+        background-color: var(--main-color);
+        border-radius: 50px;
+    }
+
+    footer {
+        grid-row: 8 / 10;
+        grid-column: 1 / 13;
+        height: 15vw; 
+        background-color: var(--main-color);
+    }
+    
+    footer p {
+        margin: 7vw 0 0 13vw;
+        color: white;
+        font-weight: 300;
+    }
+}
