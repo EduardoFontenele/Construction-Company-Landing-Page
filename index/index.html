@@ -18,7 +18,7 @@
         <img src="/imagens/logo_branca.png" alt="" id="logo_branca">
         <ul class="desktop-menu">
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/about/about.html">About Us</a></li>
             <li><a href="/portfolio.html">Portfolio</a></li>
             <li><a href="">Contact</a></li>
         </ul>
@@ -168,21 +168,21 @@
     </contact>
 
     <div class="formulario">
-        <form action="">
+        <form action="" id ="info-form">
             <label for="name">Name</label>
-            <input type="text" name="name" id="costumerName" placeholder="Name">
+            <input type="text" name="name" id="costumerName" placeholder="Name" class="validate">
             <label for="email">Email</label>
-            <input type="text" name="email" id="costumerEmail" placeholder="Email">
+            <input type="text" name="email" id="costumerEmail" placeholder="Email" class="validate">
             <label for="number">Number</label>
-            <input type="text" name="number" id="costumerNumber" placeholder="Number">
-            <button type="submit">Send</button>
+            <input type="text" name="number" id="costumerNumber" placeholder="Number" class="validate">
+            <button type="submit" id="submit-btn">Send</button>
         </form>
     </div>
 
     <footer>
         <p>Developed and designed by: Eduardo Fontenele</p>
     </footer>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

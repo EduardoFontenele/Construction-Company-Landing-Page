@@ -410,7 +410,6 @@ a:visited {
 
     .desktop-menu a:hover {
         color: var(--main-color);
-        border-bottom: 5px solid white;
     }
 
     /* Row marker: 1 / 2 */
@@ -650,7 +649,6 @@ a:visited {
         align-items: flex-start;
         width: 75vw;
         background-color: #f7fbff;
-        height: 28vw;
         box-shadow: rgb(233, 241, 247) 2px 1px 5px;
         margin: 5vw 0 5vw 0;
     }
@@ -663,7 +661,7 @@ a:visited {
 
     .formulario form input {
         width: 94%;
-        height: 70px;
+        height: 20px;
         margin: 0 0 0 1vw;
         padding: 1vw;
     }
@@ -680,6 +678,13 @@ a:visited {
         color: white;
         background-color: var(--main-color);
         border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .error-text {
+        font-size: 12px;
+        margin: 14px;
+        color: red;
     }
 
     footer {
