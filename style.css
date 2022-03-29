@@ -91,7 +91,7 @@ a:visited {
     header {
         grid-column: 1 / 4;
         grid-row: 2 / 6;
-        background-image: url(/imagens/foto2_casa.jpeg);
+        background-image: url(./imagens/foto2_casa.jpeg);
         background-position-y: center;
         background-color: rgb(146, 146, 146);
         background-blend-mode: multiply;
